@@ -1,6 +1,6 @@
 {
   "name": "@jesus-rojas/github-bot",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automatized faker commits in git",
   "type": "module",
   "main": "index.js",
