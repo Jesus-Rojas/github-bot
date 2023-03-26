@@ -15,7 +15,7 @@ In package.json
 {
   "type": "module",
   "dependencies": {
-    "@jesus-rojas/github-bot": "^1.0.4"
+    "@jesus-rojas/github-bot": "latest"
   }
 }
 ```
