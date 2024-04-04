@@ -18,5 +18,8 @@
   },
   "repository": {
     "url": "https://github.com/Jesus-Rojas/github-bot"
+  },
+  "engines": {
+    "node": "14.20.0"
   }
 }

@@ -1,0 +1,25 @@
+name: Update commits random
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  
+  schedule:
+    - cron: "0 0 */1 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '14'
+    - run: |
+        npm install
+        git config user.name Jesus Rojas
+        git config user.email jarojas6524@misena.edu.co
+        node main.js
