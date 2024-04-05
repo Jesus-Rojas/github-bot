@@ -26,5 +26,5 @@ jobs:
         git config user.email jarojas6524@misena.edu.co
     - name: Run script main.js
       run: node main.js
-    - name: Verifying changes
-      run: git status
+    - name: Uploading changes
+      run: git push origin master
