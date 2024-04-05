@@ -19,6 +19,6 @@ export const makeCommit = (contador) => {
   jsonfile.writeFile(filePath, { date }, () => {
     simpleGit()
       .add(filePath)
-      .commit(`[bot] ${date}`, { '--date': date }, makeCommit.bind(this, --contador));
+      .commit(`[bot] date random ${date}`, { '--date': date }, makeCommit.bind(this, --contador));
   });
 };
