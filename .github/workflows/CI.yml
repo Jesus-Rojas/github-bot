@@ -18,13 +18,9 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '14'
-    - name: Install dependencies
-      run: npm install
-    - name: Configuration Github
+    - name: Running scripts
       run: |
+        npm install
         git config user.name Jesus Rojas
         git config user.email jarojas6524@misena.edu.co
-    - name: Run script main.js
-      run: node main.js
-    - name: Uploading changes
-      run: git push origin master
+        node main.js
