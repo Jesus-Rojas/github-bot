@@ -1,3 +1,3 @@
 import { makeCommit } from './index.js';
 
-makeCommit(10);
+makeCommit(1);
