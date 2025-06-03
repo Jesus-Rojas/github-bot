@@ -21,6 +21,6 @@ jobs:
     - name: Running scripts
       run: |
         npm install
-        git config user.name Jesus Rojas
-        git config user.email jarojas6524@misena.edu.co
+        git config user.name Linda Rojas
+        git config user.email lindadayana159@gmail.com
         node main.js
