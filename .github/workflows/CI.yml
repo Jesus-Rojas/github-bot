@@ -5,7 +5,7 @@ on:
     branches:
       - master
   workflow_dispatch:
-  
+
   schedule:
     - cron: "0 0 */1 * *"
 
@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: '14'
-    - name: Running scripts
-      run: |
-        npm install
-        git config user.name Linda Rojas
-        git config user.email lindadayana159@gmail.com
-        node main.js
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.11.1"
+      - name: Running scripts
+        run: |
+          npm install
+          git config user.name Linda Rojas
+          git config user.email lindadayana159@gmail.com
+          node main.js
