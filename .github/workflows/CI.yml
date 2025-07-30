@@ -26,4 +26,6 @@ jobs:
           npm install
           git config user.name "$GIT_USER_NAME"
           git config user.email "$GIT_USER_EMAIL"
+          echo "➡️ Antes de main.js"
           node main.js
+          echo "✅ Después de main.js"
